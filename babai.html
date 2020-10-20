@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>万达影城-看的不是电影,是寂寞</title>
+
+<link rel="stylesheet" type="text/css" href="mystyle-pink.css"  id="css" >
+</link>
+
+<script> 
+   var types=new Array();
+   types[0]="mystyle-pink.css";
+   types[1]="mystyle-blue.css";
+   types[2]="mystyle-white.css";
+   types[3]="mystyle-black.css";
+
+  
+   function show(){
+	  // alert('hello');	  
+	  var index= document.getElementById("sheet").value;
+	  //console.log(  types[index] );
+	  document.getElementById("css").href=  types[index];
+	  
+   }  
+</script>
+
+</head>
+
+<body>
+
+<div id="container">
+
+    	<img src="pics/logo.png" width="200px" height="50px"  />
+        
+        <select id="sheet" name="css"  onchange="show()" >
+			<option value="0">粉色精灵</option>
+			<option value="1">蓝色海洋</option>
+			<option value="2">冰封世界</option>
+			<option value="3">黑色经典</option>
+		</select>
+        
+        
+        
+        <hr width="80%" />
+        <div id="types">
+        
+          <p class="pheight"> <b>类型:</b>  <a href="">战争</a>   <a href="">爱情</a> <a href="">动作</a> <a href="">武侠</a> <a href="">探案</a> <a href="">侦探</a>  </p>
+           <p class="pheight"> <b>国家:</b>  <a href="">美国</a> <a href="">大陆</a> <a href="">台湾</a> <a href="">日本</a> <a href="">韩国</a> <a href="">泰国</a> <a href="">印度</a> <a href="">欧州</a> <a href="">拉丁</a> </p>
+            <p class="pheight"><b>年份:</b>  <a href="">2020</a> <a href="">2019</a>    </p>
+       
+        </div>
+    	<div>
+        	<img class="rcorners1"  src="pics/adv.jpg" width="1024px"  />
+        </div>      
+        <div style="clear:both">
+           
+           
+            <video width="500" height="350" controls>
+  				<source src="movie/babai.mp4" type="video/mp4">
+				您的浏览器不支持Video标签。
+			</video>
+           
+           
+           
+        	
+        </div>      
+        <div>
+        	<img src="pics/report.jpg" width="1024px"  />
+        </div>     
+        <hr width="80%" />
+        <div >
+            友情链接: 
+                  <a class="copyright" href="http://www.baidu.com" target="_blank"> <img src="pics/baidu.png" width="50" height="50" /> </a>
+                  <a class="copyright" href="http://www.taobao.com" target="_blank"> <img src="pics/taobao.png" width="50" height="50" /> </a>
+        </div>
+
+</div>
+
+
+
+</body>
+</html>
